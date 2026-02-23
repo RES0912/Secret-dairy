@@ -1,0 +1,97 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to right, #ff9a9e, #fad0c4);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    width: 420px;
+    background: white;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+    max-height: 90vh;
+    overflow-y: auto;
+}
+
+h2 {
+    text-align: center;
+    color: #ff4d6d;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 8px;
+    background: #ff4d6d;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+button:hover {
+    background: #e63950;
+}
+
+.hidden {
+    display: none;
+}
+
+.memory {
+    background: #ffe5ec;
+    padding: 12px;
+    border-radius: 8px;
+    margin-top: 12px;
+    position: relative;
+}
+
+.memory img {
+    width: 100%;
+    border-radius: 8px;
+    margin-top: 8px;
+}
+
+.memory-date {
+    font-size: 12px;
+    color: gray;
+    margin-bottom: 5px;
+}
+
+.delete-btn {
+    position: absolute;
+    right: 10px;
+    top: 5px;
+    background: red;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 22px;
+    height: 22px;
+    cursor: pointer;
+}
+
+.logout-btn {
+    background: black;
+    margin-top: 15px;
+}
+
+.switch {
+    text-align: center;
+    margin-top: 10px;
+    color: blue;
+    cursor: pointer;
+}
