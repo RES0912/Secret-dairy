@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Secret Memory Diary</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+
+    <!-- LOGIN -->
+    <div id="loginSection">
+        <h2>Login</h2>
+        <input type="text" id="loginUsername" placeholder="Username">
+        <input type="password" id="loginPassword" placeholder="Password">
+        <button onclick="login()">Login</button>
+        <div class="switch" onclick="showSignup()">Don't have account? Signup</div>
+    </div>
+
+    <!-- SIGNUP -->
+    <div id="signupSection" class="hidden">
+        <h2>Signup</h2>
+        <input type="text" id="signupUsername" placeholder="Username">
+        <input type="password" id="signupPassword" placeholder="Password">
+        <button onclick="signup()">Create Account</button>
+        <div class="switch" onclick="showLogin()">Already have account? Login</div>
+    </div>
+
+    <!-- DIARY -->
+    <div id="diarySection" class="hidden">
+        <h2>Memory Library</h2>
+        <textarea id="memoryText" placeholder="Write your memory..."></textarea>
+        <input type="file" id="memoryImage" accept="image/*">
+        <button onclick="addMemory()">Add Memory</button>
+        <div id="memoryList"></div>
+        <button class="logout-btn" onclick="logout()">Logout</button>
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
